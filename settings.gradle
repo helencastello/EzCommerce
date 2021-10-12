@@ -1,0 +1,2 @@
+rootProject.name='EzCommerce'
+include ':app'

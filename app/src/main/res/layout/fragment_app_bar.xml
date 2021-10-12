@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.AppBarFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="64dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="3">
+            <TextView
+                android:id="@+id/toolbar_title_left"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@android:color/white"
+                android:gravity="center_vertical"
+                android:text="EzCommerce"
+                android:layout_weight="1"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/toolbar_title_middle"
+                android:layout_width="wrap_content"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/white"
+                android:layout_height="match_parent"
+                android:text="username"
+                android:textSize="15sp"
+                android:layout_weight="1"
+                android:textStyle="bold"/>
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:src="@drawable/user_profile"/>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+</FrameLayout>

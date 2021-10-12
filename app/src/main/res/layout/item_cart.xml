@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ly2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/iv_cart_image"
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:contentDescription="product"/>
+
+        <LinearLayout
+            android:layout_gravity="center_vertical"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_cart_item_name"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/tv_desc"
+                android:text="description"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/tv_cart_item_price"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:id="@+id/tv_cart_item_qty"
+                android:background="@drawable/rectangle"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:textSize="15dp"
+                android:text="qty"/>
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageButton
+                    android:id="@+id/btn_increment"
+                    android:src="@drawable/up"
+                    android:background="@drawable/rectangle"
+                    android:layout_height="35dp"
+                    android:scaleType="fitCenter"
+                    android:layout_width="match_parent"/>
+                <ImageButton
+                    android:id="@+id/btn_decrement"
+                    android:src="@drawable/down"
+                    android:background="@drawable/rectangle"
+                    android:layout_height="35dp"
+                    android:scaleType="fitCenter"
+                    android:layout_width="match_parent"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
